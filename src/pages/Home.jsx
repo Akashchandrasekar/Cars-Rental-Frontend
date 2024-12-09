@@ -41,7 +41,7 @@ const Home = () => {
   if (loading) {
     return (
       <Typography variant="h6" align="center">
-        Loading cars...
+        
         <br />
         <br />
         <br />
