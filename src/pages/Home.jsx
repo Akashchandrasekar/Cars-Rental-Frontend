@@ -42,6 +42,20 @@ const Home = () => {
     return (
       <Typography variant="h6" align="center">
         Loading cars...
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 text-center p-4">
+  Register For Seeing Our Rental Website
+</h2>
+<div class="flex justify-center mt-4">
+  <img
+    src="https://static.vecteezy.com/system/resources/previews/010/925/820/non_2x/colorful-welcome-design-template-free-vector.jpg"
+    alt="welcome"
+    class="w-64 h-auto md:w-80 lg:w-96 rounded-lg "
+  />
+</div>
       </Typography>
     );
   }
@@ -68,7 +82,10 @@ const Home = () => {
         <Grid container spacing={4}>
           {cars.map((car) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={car._id}>
-              <Paper elevation={4} sx={{ p: 2, borderRadius: 2, height: "100%" }}>
+              <Paper
+                elevation={4}
+                sx={{ p: 2, borderRadius: 2, height: "100%" }}
+              >
                 <Box sx={{ mb: 2 }}>
                   <img
                     src={car.image || "/default-image.jpg"} // Fallback image

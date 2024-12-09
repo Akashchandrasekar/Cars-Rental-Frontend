@@ -36,9 +36,9 @@ const Register = () => {
     <div className="container mx-auto  py-9 bg-gray-400 font-serif">
       <form
         onSubmit={handleSubmit}
-        className="max-w-md mx-auto bg-cyan-800 p-8 shadow"
-      >
-        <h2 className="text-2xl mb-4 font-bold text-cyan-300">Register</h2>
+        className="max-w-md mx-auto bg-cyan-800 p-8 shadow">
+      <h1 className="text-2xl font-bold text-fuchsia-600">Register For Seeing Our Website</h1>
+       
         {error && (
           <div className="bg-red-100 p-3 mb-4 text-red-600 rounded">
             {error}
