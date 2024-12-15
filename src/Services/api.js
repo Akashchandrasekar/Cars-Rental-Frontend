@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://cars-rental-project-backend.onrender.com/api",
+  baseURL: "https://carsrental-project-backend.onrender.com/api",
 });
 
 api.interceptors.request.use(
