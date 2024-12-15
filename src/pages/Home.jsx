@@ -14,7 +14,7 @@ const Home = () => {
       try {
         console.log("Starting API request...");
         const response = await axios.get(
-          "https://cars-rental-project-backend.onrender.com/api/vehicles"
+          "https://carsrental-project-backend.onrender.com/api/vehicles"
         );
         console.log("Fetched Vehicles Data:", response.data);
         setCars(response.data || []); // Update state with fetched data, default to an empty array if undefined
