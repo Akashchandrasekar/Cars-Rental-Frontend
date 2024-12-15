@@ -25,7 +25,7 @@ const ReviewsPage = () => {
   const fetchVehicles = async () => {
     try {
       const response = await axios.get(
-        "https://cars-rental-project-backend.onrender.com/api/vehicles"
+        "https://carsrental-project-backend.onrender.com/api/vehicles"
       );
       setVehicles(response.data);
     } catch (error) {
@@ -37,7 +37,7 @@ const ReviewsPage = () => {
   const fetchAllReviews = async () => {
     try {
       const response = await axios.get(
-        "https://cars-rental-project-backend.onrender.com/api/reviews"
+        "https://carsrental-project-backend.onrender.com/api/reviews"
       );
       setReviews(response.data);
       localStorage.setItem("reviews", JSON.stringify(response.data)); // Save reviews to localStorage
