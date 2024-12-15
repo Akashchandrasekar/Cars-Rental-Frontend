@@ -22,7 +22,7 @@ const VehicleRecords = () => {
   const fetchVehicles = async () => {
     try {
       const response = await axios.get(
-        "https://cars-rental-project-backend.onrender.com/api/vehicles"
+        "https://carsrental-project-backend.onrender.com/api/vehicles"
       );
       setVehicles(response.data);
       localStorage.setItem("vehicles", JSON.stringify(response.data)); // Save to localStorage
@@ -35,7 +35,7 @@ const VehicleRecords = () => {
   const fetchRentalHistory = async (vehicleId) => {
     try {
       const response = await axios.get(
-        `https://cars-rental-project-backend.onrender.com/api/bookings/rental-history/${vehicleId}`
+        `https://carsrental-project-backend.onrender.com/api/bookings/rental-history/${vehicleId}`
       );
       setRentalHistory(response.data.rentalHistory);
       setMessage("");
@@ -56,7 +56,7 @@ const VehicleRecords = () => {
   
       // Send the token in the Authorization header
       const response = await axios.get(
-        `https://cars-rental-project-backend.onrender.com/api/bookings/rental-report/${vehicleId}`,
+        `https://carsrental-project-backend.onrender.com/api/bookings/rental-report/${vehicleId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
