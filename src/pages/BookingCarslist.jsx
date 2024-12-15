@@ -12,7 +12,7 @@ const CarsList = () => {
   useEffect(() => {
     const fetchCars = async () => {
       try {
-        const response = await axios.get('https://cars-rental-project-backend.onrender.com/api/vehicles');
+        const response = await axios.get('https://carsrental-project-backend.onrender.com/api/vehicles');
         setCars(response.data);
         setLoading(false);
       } catch (error) {
@@ -25,7 +25,7 @@ const CarsList = () => {
   }, []);
 
   const handleBooking = (vehicleId) => {
-    navigate(`https://cars-rental-project-backend.onrender.com/api/booking/${vehicleId}`); // Navigate to the booking form for the selected car
+    navigate(`https://carsrental-project-backend.onrender.com/api/booking/${vehicleId}`); // Navigate to the booking form for the selected car
   };
 
   if (loading) {
