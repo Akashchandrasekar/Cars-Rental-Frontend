@@ -15,12 +15,12 @@ const BookingPage = () => {
     const fetchData = async () => {
       try {
         const vehiclesResponse = await axios.get(
-          "https://cars-rental-project-backend.onrender.com/api/vehicles"
+          "https://carsrental-project-backend.onrender.com/api/vehicles"
         );
         setVehicles(vehiclesResponse.data);
 
         const bookingsResponse = await axios.get(
-          "https://cars-rental-project-backend.onrender.com/api/bookings"
+          "https://carsrental-project-backend.onrender.com/api/bookings"
         );
         setBookings(bookingsResponse.data);
       } catch (error) {
@@ -36,7 +36,7 @@ const BookingPage = () => {
 
     try {
       const response = await axios.post(
-        "https://cars-rental-project-backend.onrender.com/api/bookings",
+        "https://carsrental-project-backend.onrender.com/api/bookings",
         {
           vehicle: selectedVehicle,
           startDate,
