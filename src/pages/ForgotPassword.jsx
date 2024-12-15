@@ -19,7 +19,7 @@ const ForgotPassword = () => {
 
     try {
       const response = await axios.post(
-        `https://cars-rental-project-backend.onrender.com/api/auth/forgot-password`,  // Update with your API URL
+        `https://carsrental-project-backend.onrender.com/api/auth/forgot-password`,  // Update with your API URL
         { email }
       );
 
